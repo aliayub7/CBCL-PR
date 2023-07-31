@@ -13,9 +13,6 @@ from sklearn.model_selection import train_test_split
 from Functions_new import get_centroids
 from Functions_new import check_reduce_centroids_covariances
 from Functions_new import check_reduce_centroids
-from Functions_new import get_accuracy
-from Functions_new import get_test_accuracy
-from Functions_new import get_validation_accuracy
 from sklearn.model_selection import KFold
 import random
 # THE FOLLOWING IS DEFINITELY NEEDED WHEN WORKING WITH PYTORCH
