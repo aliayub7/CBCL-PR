@@ -14,6 +14,8 @@ For most real-world applications, robots need to adapt and learn continually wit
 * First run ```get_features.py``` to get the ResNet features for all the images in the dataset. For Caltheh-101 and F-SIOL-310 use ResNet-18 instead of ResNet-34. Store the features in a separate */features folder.
 * Features are extracted using an updated version of the ```img2vec.py``` file from https://github.com/christiansafka/img2vec repo. Check that repo if you want more details.
 * After feature extraction, simply run ```main_file.py``` to get the results for all increments.
+* The code currently has parameters set for CIFAR-100. Just change the appropriate parameters to run it on other datasets.
+* The code currently runs on full datasets. For few-shot incremental learning, simply replace ```k_shot``` variable to 5 or 10 in ```main_file.py```.
 ## If you consider citing us
 ```
 @ARTICLE{ayub_tcds_2023,
