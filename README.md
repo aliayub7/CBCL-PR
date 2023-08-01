@@ -11,7 +11,7 @@ For most real-world applications, robots need to adapt and learn continually wit
 * Scikit Learn (Currently working with 0.21.2)
 * Download the datasets in */data directory
 ## Usage
-* First run ```get_features.py``` to get the ResNet features for all the images in the dataset. For Caltheh-101 and F-SIOL-310 use ResNet-18 instead of ResNet-34. Store the features in a separate */features folder.
+* First run ```get_features.py``` to get the ResNet features for all the images in the dataset. For Caltheh-101 and F-SIOL-310 use ResNet-18 instead of ResNet-34. Store the features in a separate ```*/features``` folder.
 * Features are extracted using an updated version of the ```img2vec.py``` file from https://github.com/christiansafka/img2vec repo. Check that repo if you want more details.
 * After feature extraction, simply run ```main_file.py``` to get the results for all increments.
 * The code currently has parameters set for CIFAR-100. Just change the appropriate parameters to run it on other datasets.
