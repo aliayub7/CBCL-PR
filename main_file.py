@@ -136,7 +136,7 @@ def main(seed):
             complete_centroids_num=complete_centroids_num)
 
         # find the centroids for new classes
-        centroid_finder.validation_based()
+        centroid_finder.update_centroids()
 
         # updating variables from the centroid_finder class
         complete_centroids = centroid_finder.complete_centroids
