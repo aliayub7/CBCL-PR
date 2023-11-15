@@ -135,5 +135,5 @@ class getCentroids:
             total_centroids+=len(self.complete_centroids[i])
         print ("total_centroids",total_centroids)
 
-        self.best_k = indis[np.argmax(max_acs)]
+        #self.best_k = indis[np.argmax(max_acs)]
 
