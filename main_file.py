@@ -177,10 +177,10 @@ def main(seed):
                     req_samples = samples_per - ones_count
                     if len(complete_centroids_num[i])-ones_count>0:
                         how_many_per_centroid = round(req_samples/(len(complete_centroids_num[i])-ones_count))
-                else:
-                    how_many_per_centroid = previous_centroids_num[i][j]
                 for j in range(0,len(previous_centroids_num[i])):
                     if previous_centroids_num[i][j]>1:
+                        if k_shot is None:
+                            how_many_per_centroid = previous_centroids_num[i][j]
                         if diag_covariances != True:
                             temp = list(np.random.multivariate_normal(previous_centroids[i][j],previous_covariances[i][j],how_many_per_centroid))
                         else:
